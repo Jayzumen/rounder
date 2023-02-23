@@ -6,7 +6,7 @@ export default async function ResultsPage() {
     <main className="flex flex-col gap-4 p-4">
       <h1 className="pb-8 pt-4 text-center text-4xl font-bold">Results</h1>
       <Link
-        className="mx-auto rounded-md bg-slate-700 px-6 py-4 text-xl transition hover:bg-slate-800"
+        className="mx-auto px-6 py-4 text-xl transition hover:underline"
         href="/"
       >
         Vote
