@@ -22,7 +22,7 @@ export default async function Home() {
 
         <Link
           aria-label="Github Link"
-          className="mx-auto p-2 text-center text-xl transition hover:underline"
+          className="mx-auto p-2 text-center text-xl transition hover:scale-105"
           href="https://github.com/Jayzumen"
           target="_blank"
           rel="noopener noreferrer"
