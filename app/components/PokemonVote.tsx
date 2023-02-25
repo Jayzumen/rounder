@@ -10,13 +10,13 @@ export default function PokemonVote() {
   const [firstPokemon, setFirstPokemon] = useState<Pokemon>();
   const [secondPokemon, setSecondPokemon] = useState<Pokemon>();
 
-  const fetchPokemon = async () => {
+  const fetchPokemon = async (firstPokemon: Pokemon | undefined) => {
     setFirstPokemon(await getRandomPokemon());
-    setSecondPokemon(await getRandomPokemon(firstPokemon?.id));
+    setSecondPokemon(await getRandomPokemon(firstPokemon && firstPokemon?.id));
   };
 
   useEffect(() => {
-    fetchPokemon();
+    fetchPokemon(firstPokemon);
   }, []);
 
   const voteRounder = async (pokemon: Pokemon) => {
@@ -38,7 +38,7 @@ export default function PokemonVote() {
 
   const handleClick = async (pokemon: Pokemon) => {
     voteRounder(pokemon);
-    fetchPokemon();
+    fetchPokemon(firstPokemon);
   };
 
   if (!firstPokemon || !secondPokemon) return <p>Loading...</p>;
