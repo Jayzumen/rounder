@@ -18,7 +18,7 @@ export default function AboutPage() {
           more round.
         </p>
         <p>
-          It's inspired by an idea from{" "}
+          It is inspired by an idea from{" "}
           <Link
             aria-label="Theo's Twitter"
             className="font-semibold text-sky-400 underline"
