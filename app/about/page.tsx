@@ -1,4 +1,12 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata = (): Metadata => {
+  return {
+    title: "Rounder | About",
+    description: "About page for Rounder",
+  };
+};
 
 export default function AboutPage() {
   return (

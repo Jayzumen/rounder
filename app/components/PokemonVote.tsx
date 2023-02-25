@@ -12,8 +12,10 @@ export default function PokemonVote() {
 
   useEffect(() => {
     const fetchPokemon = async () => {
-      setFirstPokemon(await getRandomPokemon());
-      setSecondPokemon(await getRandomPokemon(firstPokemon?.id));
+      const first = await getRandomPokemon();
+      const second = await getRandomPokemon(firstPokemon?.id);
+      setFirstPokemon(first);
+      setSecondPokemon(second);
     };
     fetchPokemon();
   }, []);

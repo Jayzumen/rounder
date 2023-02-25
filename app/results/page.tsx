@@ -1,5 +1,13 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import Results from "./components/Results";
+
+export const metadata = (): Metadata => {
+  return {
+    title: "Rounder | Results",
+    description: "Results page for Rounder",
+  };
+};
 
 export default async function ResultsPage() {
   return (
