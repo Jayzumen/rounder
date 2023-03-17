@@ -1,13 +1,10 @@
-import { Metadata } from "next";
 import "./globals.css";
 
-export const metadata = (): Metadata => {
-  return {
-    title: "Rounder",
-    description:
-      "Rounder is a simple app that allows you to vote on which Pokémon is more round.",
-    icons: "/pokeball.svg",
-  };
+export const metadata = {
+  title: "Rounder",
+  description:
+    "Rounder is a simple app that allows you to vote on which Pokémon is more round.",
+  icons: "/pokeball.svg",
 };
 
 export default function RootLayout({
