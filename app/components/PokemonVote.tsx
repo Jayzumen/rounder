@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { db } from "../firebase";
 import { collection, doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
-import { getRandomPokemon, Pokemon } from "../getPokemon";
+import { getRandomPokemon } from "../getPokemon";
 import { useEffect, useState } from "react";
 
 export default function PokemonVote() {
