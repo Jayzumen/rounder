@@ -1,9 +1,3 @@
-export interface Pokemon {
-  name: string;
-  id: number;
-  image: string;
-}
-
 export async function getRandomPokemon(id?: number): Promise<Pokemon> {
   const randomId = Math.floor(Math.random() * 1008 + 1);
   if (id === randomId) {
@@ -15,5 +9,6 @@ export async function getRandomPokemon(id?: number): Promise<Pokemon> {
     name: data.name,
     id: data.id,
     image: data.sprites.other["official-artwork"].front_default,
+    rounder: 0,
   };
 }

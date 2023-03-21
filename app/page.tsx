@@ -21,6 +21,13 @@ export default async function Home() {
         </Link>
 
         <Link
+          aria-label="Link to Search Page"
+          className="mx-auto p-4 text-center text-xl transition hover:underline"
+          href="/search"
+        >
+          Search
+        </Link>
+        <Link
           aria-label="Github Link"
           className="mx-auto p-2 text-center text-xl transition hover:scale-105"
           href="https://github.com/Jayzumen"
