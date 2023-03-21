@@ -8,6 +8,8 @@ export const metadata = {
   description: "Results page for Rounder",
 };
 
+export const revalidate = 10;
+
 const getResults = async () => {
   const pokemonRef = collection(db, "pokemon");
   const pokemonSnapshot = await getDocs(pokemonRef);
